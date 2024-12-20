@@ -77,7 +77,7 @@ namespace Evolution.Differential
                     Console.WriteLine($"{i + 1},{GetBestFitness()}");
                 }
             }
-            
+            writer?.Flush();
             writer?.Close();
         }
 

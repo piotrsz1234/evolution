@@ -116,7 +116,7 @@ namespace Evolution.Differential
             double result = 0;
             for (int i = 0; i < input.Length; i++)
             {
-                result += Math.Pow(input[i], i + 2);
+                result += Math.Pow(Math.Abs(input[i]), i + 2);
             }
 
             return result;
